@@ -2,15 +2,11 @@ package com.futurex.services.FutureXCourseApp;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.math.BigInteger;
 
-import jakarta.persistence.Entity;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.annotation.Id;
-
-@EntityScan
+@Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Course {
 
